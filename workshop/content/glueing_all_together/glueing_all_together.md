@@ -3,15 +3,15 @@ title = "Step by Step"
 weight = 2
 +++
 
-1. Navigate to the AWS Lambda service in the console
+1. Navigate to the **AWS Lambda** service in the console.
 
-2. Click Create function and specify the following:
+2. Click **Create function** and specify the following:
 
-    - Function name: orderLambda-team#
+    - Function name: {{<copypaste id="tooltiptext0" text="orderLambda-team#">}} 
 
-    - Runtime: Python 3.7 – This is the language we’ll be writing our business logic in
+    - Runtime: **Python 3.8** – This is the language we’ll be writing our business logic in
 
-    - Execution role: Use an existing role: LambdaOrdersRole – This provides our Lambda function programmatic access to our machine learning model and IoT drones for delivery
+    - Execution role: Use an existing role: **LambdaOrdersRole** – This provides our Lambda function programmatic access to our machine learning model and IoT drones for delivery
 
 3. Select **Create function**.
 
@@ -220,6 +220,6 @@ weight = 2
 *See if you can spot the location in the code where we feed in the top 8 products. If you had the chance in Activity 1 to determine the least ordered products, replace the list of items with the bottom 8 products*
     {{% /expand %}}
 
-5. The final thing left to do is add a required Python library, and ensure the Alexa skill invokes the Lambda function once it’s collected the user’s details. To do this, expand the Designer window, click on Layers and add the Boto3layer. Select version 3 and click Add. Click Add trigger, the select Alexa Skills Kit. Select Disable for the Skill ID verification and select Add. Click Save. Copy the ARN which is a resource identifier for the Lambda function in the top right hand corner.
+5. The final thing left to do is ensure the Alexa skill invokes the Lambda function once it’s collected the user’s details. To do this, expand the Designer window, click **Add trigger**, the select **Alexa Skills Kit**. Select **Disable** for the Skill ID verification and select **Add**. Click **Save**. Copy the ARN which is a resource identifier for the Lambda function in the top right hand corner.
 
-6. Go back to your Alexa developer console and select Endpoint, then choose AWS Lambda ARN, and paste the ARN copied in the previous step, in Default Region. Click Save Endpoints. Select the Invocation tab, then select Build Model.
+6. Go back to your Alexa developer console and select **Endpoint**, then choose **AWS Lambda ARN**, and paste the ARN copied in the previous step, in Default Region. Click **Save Endpoints**. Select the **Invocation tab**, then select **Build Model**.

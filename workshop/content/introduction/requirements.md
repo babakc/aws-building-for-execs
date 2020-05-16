@@ -37,6 +37,6 @@ To run this workshop, you’ll need the following:
     </li>
     <br>
     <li>
-        (Optional) Crazyflie indoor explorer bundle plus extra drones and 4 lighting stands: [From here](https://store.bitcraze.io/products/indoor-explorer-bundle)
+        (Optional) Crazyflie indoor explorer bundle plus extra drones and 4 lighting stands: <a href="https://store.bitcraze.io/products/indoor-explorer-bundle">https://store.bitcraze.io/products/indoor-explorer-bundle</a>
     </li>
 </ol>
